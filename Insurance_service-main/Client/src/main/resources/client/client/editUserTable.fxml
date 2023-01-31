@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="284.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Admin.EditUserController">
+   <children>
+      <TextField fx:id="loginField" editable="false" focusTraversable="false" layoutX="47.0" layoutY="35.0" opacity="0.5" prefHeight="25.0" prefWidth="156.0" />
+      <TextField fx:id="surnameField" layoutX="47.0" layoutY="90.0" prefHeight="25.0" prefWidth="156.0" />
+      <TextField fx:id="nameField" layoutX="47.0" layoutY="146.0" prefHeight="25.0" prefWidth="156.0" />
+      <DatePicker fx:id="birthdayField" layoutX="47.0" layoutY="202.0" prefHeight="25.0" prefWidth="156.0" />
+      <TextField fx:id="addressField" layoutX="258.0" layoutY="90.0" prefHeight="25.0" prefWidth="156.0" />
+      <TextField fx:id="passportField" layoutX="258.0" layoutY="146.0" prefHeight="25.0" prefWidth="156.0" />
+      <TextField fx:id="phoneField" layoutX="258.0" layoutY="202.0" prefHeight="25.0" prefWidth="156.0" />
+      <TextField fx:id="passwordField" editable="false" focusTraversable="false" layoutX="258.0" layoutY="35.0" opacity="0.5" prefHeight="25.0" prefWidth="156.0" />
+      <Button fx:id="saveBtn" layoutX="190.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="27.0" text="Сохранить">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="47.0" layoutY="14.0" text="Логин">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="14.0" text="Пароль">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="69.0" text="Фамилия">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="125.0" text="Имя">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="183.0" text="Дата рождения">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="183.0" text="Телефон">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="69.0" text="Адрес">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="125.0" text="Серия и номер паспорта">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

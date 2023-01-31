@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="426.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Agent.ShowUsers">
+   <children>
+      <TableView fx:id="tableView" layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="69.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="loginColumn" prefWidth="74.6666589975357" style="-fx-alignment: CENTER;" text="Логин" />
+            <TableColumn fx:id="surnameColumn" prefWidth="75.99999237060547" style="-fx-alignment: CENTER;" text="Фамилия" />
+            <TableColumn fx:id="nameColumn" prefWidth="75.0" style="-fx-alignment: CENTER;" text="Имя" />
+            <TableColumn fx:id="birthdayColumn" prefWidth="96.0" style="-fx-alignment: CENTER;" text="Дата рождения" />
+            <TableColumn fx:id="phoneColumn" prefWidth="98.0" style="-fx-alignment: CENTER;" text="Телефон" />
+            <TableColumn fx:id="addressColumn" prefWidth="161.33328247070312" style="-fx-alignment: CENTER;" text="Адрес" />
+            <TableColumn fx:id="passportColumn" minWidth="3.99993896484375" prefWidth="94.0" style="-fx-alignment: CENTER;" text="Паспорт" />
+         </columns>
+      </TableView>
+      <Button fx:id="closeBtn" layoutX="560.0" layoutY="373.0" mnemonicParsing="false" onMouseClicked="#closeWindow" prefHeight="40.0" prefWidth="103.0" text="Назад" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="14.666666666666671">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="213.0" layoutY="382.0" text="Поиск" AnchorPane.bottomAnchor="20.666666666666668">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchField" layoutX="264.0" layoutY="380.0" AnchorPane.bottomAnchor="20.666666666666668" />
+   </children>
+</AnchorPane>
